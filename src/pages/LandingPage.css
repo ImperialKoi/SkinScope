@@ -1,0 +1,43 @@
+.logo-container {
+    position: absolute;
+    top: 50%;
+    margin-left: 12%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    animation: slideIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Bezier curve animation */
+  }
+  
+  .logo {
+    width: 150px;  /* Increase logo size */
+    height: 150px; /* Increase logo size */
+    margin-right: 60px; /* Adjust space between logo and text */
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+  }
+  
+  .logo-text {
+    font-size: 7rem;
+    color: black; 
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 0.5s forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 10%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
